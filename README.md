@@ -1,6 +1,8 @@
 # universal tree template
 Tricktresor Tree Template in the context of #devtoberfest 2020
 
+![screenshot](https://github.com/tricktresor/tree_template/blob/master/img/SNAG-00721.png)
+
 # purpose
 providing a tree framework to use common tree features and easily build a tree with class CL_LIST_TREE_MODEL.
 design a tree with independent nodes of different behaviour.
