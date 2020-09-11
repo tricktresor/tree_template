@@ -15,6 +15,7 @@ interface ZIF_TTTT_NODE
       collapse TYPE fcode VALUE 'Collapse',
       expand   TYPE fcode VALUE 'Expand',
     END OF function .
+  data CONTAINER type ref to CL_GUI_CONTAINER .
 
   methods GET_ITEMS
     returning
@@ -46,4 +47,16 @@ interface ZIF_TTTT_NODE
   methods SET_MARK
     importing
       !CHOSEN type ABAP_BOOL .
+  methods GET_CONTROL
+    returning
+      value(CONTROL) type ref to CL_GUI_CONTROL .
+  methods SET_CONTAINER
+    importing
+      !CONT type ref to CL_GUI_CONTAINER .
+  methods IS_FOLDER
+    returning
+      value(FOLDER) type ABAP_BOOL .
+  methods IS_DISABLED
+    returning
+      value(DISABLED) type ABAP_BOOL .
 endinterface.

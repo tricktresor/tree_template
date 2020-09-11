@@ -1,92 +1,100 @@
-CLASS zcl_tttt_main DEFINITION
-  PUBLIC
-  CREATE PUBLIC .
+class ZCL_TTTT_MAIN definition
+  public
+  create public .
 
-  PUBLIC SECTION.
+public section.
 
-    METHODS set_tree
-      IMPORTING
-        !container TYPE REF TO cl_gui_container .
-    METHODS add_node
-      IMPORTING
-        !parent             TYPE tm_nodekey
-        !object             TYPE REF TO zif_tttt_node
-      RETURNING
-        VALUE(new_node_key) TYPE tm_nodekey .
-    METHODS node_get_usr_obj
-      IMPORTING
-        !node_key  TYPE tm_nodekey
-      RETURNING
-        VALUE(obj) TYPE REF TO zif_tttt_node .
-  PROTECTED SECTION.
+  data TREE type ref to CL_LIST_TREE_MODEL .
 
-    TYPES:
-      BEGIN OF ty_node,
+  methods SET_TREE
+    importing
+      !TREE_CONTAINER type ref to CL_GUI_CONTAINER
+      !DATA_CONTAINER type ref to CL_GUI_CONTAINER optional .
+  methods ADD_NODE
+    importing
+      !PARENT type TM_NODEKEY
+      !OBJECT type ref to ZIF_TTTT_NODE
+    returning
+      value(NEW_NODE_KEY) type TM_NODEKEY .
+  methods NODE_GET_USR_OBJ
+    importing
+      !NODE_KEY type TM_NODEKEY
+    returning
+      value(OBJ) type ref to ZIF_TTTT_NODE .
+protected section.
+
+  types:
+    BEGIN OF ty_node,
         key TYPE tm_nodekey,
         pnt TYPE tm_nodekey,
         obj TYPE REF TO zif_tttt_node,
         sel TYPE boolean_flg,
       END OF ty_node .
-    TYPES:
-      ty_nodes TYPE SORTED TABLE OF ty_node WITH UNIQUE KEY key .
+  types:
+    ty_nodes TYPE SORTED TABLE OF ty_node WITH UNIQUE KEY key .
 
-    DATA tree TYPE REF TO cl_list_tree_model .
-    DATA ctrl TYPE REF TO cl_gui_control .
-    DATA all_nodes TYPE ty_nodes .
-    DATA root_node TYPE tm_nodekey .
+  data CTRL type ref to CL_GUI_CONTROL .
+  data ALL_NODES type TY_NODES .
+  data ROOT_NODE type TM_NODEKEY .
+  data TREE_CONTAINER type ref to CL_GUI_CONTAINER .
+  data DATA_CONTAINER type ref to CL_GUI_CONTAINER .
 
-    METHODS on_checkbox_change
-        FOR EVENT checkbox_change OF cl_list_tree_model
-      IMPORTING
-        !checked
-        !item_name
-        !node_key .
-    METHODS on_expand_node
-        FOR EVENT expand_no_children OF cl_list_tree_model
-      IMPORTING
-        !node_key .
-    METHODS on_expand_no_children
-        FOR EVENT expand_no_children OF cl_list_tree_model
-      IMPORTING
-        !node_key
-        !sender .
-    METHODS on_item_cxt_menu_request
-        FOR EVENT item_context_menu_request OF cl_list_tree_model
-      IMPORTING
-        !item_name
-        !menu
-        !node_key .
-    METHODS on_item_cxt_menu_selected
-        FOR EVENT item_context_menu_select OF cl_list_tree_model
-      IMPORTING
-        !fcode
-        !item_name
-        !node_key .
-    METHODS on_item_double_click
-        FOR EVENT item_double_click OF cl_list_tree_model
-      IMPORTING
-        !item_name
-        !node_key .
-    METHODS on_link_click
-        FOR EVENT link_click OF cl_list_tree_model
-      IMPORTING
-        !item_name
-        !node_key .
-    METHODS on_node_cxt_menu_request
-        FOR EVENT node_context_menu_request OF cl_list_tree_model
-      IMPORTING
-        !menu
-        !node_key .
-    METHODS on_node_cxt_menu_selected
-        FOR EVENT node_context_menu_select OF cl_list_tree_model
-      IMPORTING
-        !fcode
-        !node_key .
-    METHODS on_node_double_click
-        FOR EVENT node_double_click OF cl_list_tree_model
-      IMPORTING
-        !node_key .
-  PRIVATE SECTION.
+  methods ON_CHECKBOX_CHANGE
+    for event CHECKBOX_CHANGE of CL_LIST_TREE_MODEL
+    importing
+      !CHECKED
+      !ITEM_NAME
+      !NODE_KEY .
+  methods ON_EXPAND_NODE
+    for event EXPAND_NO_CHILDREN of CL_LIST_TREE_MODEL
+    importing
+      !NODE_KEY .
+  methods ON_EXPAND_NO_CHILDREN
+    for event EXPAND_NO_CHILDREN of CL_LIST_TREE_MODEL
+    importing
+      !NODE_KEY
+      !SENDER .
+  methods ON_ITEM_CXT_MENU_REQUEST
+    for event ITEM_CONTEXT_MENU_REQUEST of CL_LIST_TREE_MODEL
+    importing
+      !ITEM_NAME
+      !MENU
+      !NODE_KEY .
+  methods ON_ITEM_CXT_MENU_SELECTED
+    for event ITEM_CONTEXT_MENU_SELECT of CL_LIST_TREE_MODEL
+    importing
+      !FCODE
+      !ITEM_NAME
+      !NODE_KEY .
+  methods ON_ITEM_DOUBLE_CLICK
+    for event ITEM_DOUBLE_CLICK of CL_LIST_TREE_MODEL
+    importing
+      !ITEM_NAME
+      !NODE_KEY .
+  methods ON_LINK_CLICK
+    for event LINK_CLICK of CL_LIST_TREE_MODEL
+    importing
+      !ITEM_NAME
+      !NODE_KEY .
+  methods ON_NODE_CXT_MENU_REQUEST
+    for event NODE_CONTEXT_MENU_REQUEST of CL_LIST_TREE_MODEL
+    importing
+      !MENU
+      !NODE_KEY .
+  methods ON_NODE_CXT_MENU_SELECTED
+    for event NODE_CONTEXT_MENU_SELECT of CL_LIST_TREE_MODEL
+    importing
+      !FCODE
+      !NODE_KEY .
+  methods ON_NODE_DOUBLE_CLICK
+    for event NODE_DOUBLE_CLICK of CL_LIST_TREE_MODEL
+    importing
+      !NODE_KEY .
+private section.
+
+  methods DISPLAY
+    importing
+      !OBJ type ref to ZIF_TTTT_NODE .
 ENDCLASS.
 
 
@@ -96,7 +104,6 @@ CLASS ZCL_TTTT_MAIN IMPLEMENTATION.
 
   METHOD add_node.
 
-
     DATA guid TYPE guid_32.
 
     CALL FUNCTION 'GUID_CREATE'
@@ -104,14 +111,16 @@ CLASS ZCL_TTTT_MAIN IMPLEMENTATION.
         ev_guid_32 = guid.
     new_node_key = guid.
 
+    object->set_container( data_container ).
+
     tree->add_node(
       EXPORTING
         node_key                = new_node_key
         relative_node_key       = parent
         relationship            = cl_tree_model=>relat_last_child
-        isfolder                = abap_true
+        isfolder                = object->is_folder( )
         hidden                  = space
-        disabled                = space
+        disabled                = object->is_disabled( )
         style                   = cl_column_tree_model=>style_default
         no_branch               = space
         expander                = abap_true
@@ -135,6 +144,22 @@ CLASS ZCL_TTTT_MAIN IMPLEMENTATION.
       pnt = parent
       obj = object ) INTO TABLE all_nodes.
 
+
+  ENDMETHOD.
+
+
+  METHOD display.
+
+    DATA(ctrl) = obj->get_control( ).
+
+    IF ctrl IS NOT INITIAL.
+      LOOP AT data_container->children INTO DATA(child).
+        child->set_visible( space ).
+      ENDLOOP.
+
+      ctrl->set_visible( abap_true ).
+
+    ENDIF.
 
   ENDMETHOD.
 
@@ -268,22 +293,26 @@ CLASS ZCL_TTTT_MAIN IMPLEMENTATION.
 
   METHOD on_item_double_click.
 
+    DATA(obj) = node_get_usr_obj( node_key ).
 
-    node_get_usr_obj( node_key )->action_item_double_click(
+    obj->action_item_double_click(
       node_key  = node_key
       item_name = item_name ).
 
+    display( obj ).
 
   ENDMETHOD.
 
 
   METHOD on_link_click.
 
+    DATA(obj) = node_get_usr_obj( node_key ).
 
-    node_get_usr_obj( node_key )->action_link_click(
+    obj->action_link_click(
       node_key  = node_key
       item_name = item_name ).
 
+    display( obj ).
 
   ENDMETHOD.
 
@@ -315,16 +344,21 @@ CLASS ZCL_TTTT_MAIN IMPLEMENTATION.
 
   METHOD on_node_double_click.
 
+    DATA(obj) = node_get_usr_obj( node_key ).
 
-    node_get_usr_obj( node_key )->action_node_double_click(
+    obj->action_node_double_click(
       node_key = node_key ).
 
+    display( obj ).
 
   ENDMETHOD.
 
 
   METHOD set_tree.
 
+
+    me->tree_container = tree_container.
+    me->data_container = data_container.
 
     CREATE OBJECT tree
       EXPORTING
@@ -342,7 +376,7 @@ CLASS ZCL_TTTT_MAIN IMPLEMENTATION.
 
     tree->create_tree_control(
       EXPORTING
-        parent  = container
+        parent  = me->tree_container
       IMPORTING
         control = ctrl
       EXCEPTIONS
