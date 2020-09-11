@@ -5,7 +5,6 @@ DATA application TYPE REF TO zcl_tttt_demo_application_02.
 START-OF-SELECTION.
   CALL SCREEN 100.
 
-
 *&---------------------------------------------------------------------*
 *&      Module  STATUS_0100  OUTPUT
 *&---------------------------------------------------------------------*
