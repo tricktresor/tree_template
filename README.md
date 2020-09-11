@@ -64,3 +64,9 @@ Each node type will be a separate class with general behaviour (define node icon
  - dragging items into "dust bin" to cancel
  - assign serial numbers from order a to order b
  - build BOM structures
+
+# Examples
+
+example application "Marvel Universe"
+
+![screenshot demo02](https://github.com/tricktresor/tree_template/blob/master/img/SNAG-00729.png)
