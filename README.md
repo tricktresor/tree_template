@@ -67,6 +67,9 @@ Each node type will be a separate class with general behaviour (define node icon
 
 # Examples
 
-example application "Marvel Universe"
+## demo 02 - example application "Marvel Universe"
 
 ![screenshot demo02](https://github.com/tricktresor/tree_template/blob/master/img/SNAG-00729.png)
+
+## demo 03 - example application "transactions and report menu"
+
