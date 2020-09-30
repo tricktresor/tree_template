@@ -73,3 +73,8 @@ Each node type will be a separate class with general behaviour (define node icon
 
 ## demo 03 - example application "transactions and report menu"
 
+specific nodes with discrete attributes 
+* transaction
+* report
+
+![screenshot demo03](https://github.com/tricktresor/tree_template/blob/master/img/SNAG-00776.png)
