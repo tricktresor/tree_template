@@ -7,8 +7,8 @@ interface ZIF_TTTT_NODE
   data DESCRIPTION type STRING .
   constants:
     BEGIN OF item_name,
-      checkbox    TYPE tv_itmname VALUE '1',
-      description TYPE tv_itmname VALUE '2',
+      checkbox    TYPE tv_itmname VALUE '10',
+      description TYPE tv_itmname VALUE '20',
     END OF item_name .
   constants:
     BEGIN OF function,
@@ -44,6 +44,9 @@ interface ZIF_TTTT_NODE
       !FCODE type FCODE
       !NODE_KEY type TM_NODEKEY
       !ITEM_NAME type TV_ITMNAME .
+  methods ACTION_SELECTION_CHANGED
+    importing
+      !NODE_KEY type TM_NODEKEY .
   methods SET_MARK
     importing
       !CHOSEN type ABAP_BOOL .

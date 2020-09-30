@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_TTTT_DEMO_03_NODE_TRAN</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Tricktresor tree templates - menu node: transaction</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>NEX</KEY>
+     <ENTRY>Documentation does not exist</ENTRY>
+     <LENGTH>56</LENGTH>
+    </item>
+   </TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_TTTT_DEMO_03_NODE_TRAN</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_TTTT_DEMO_03_NODE_TRAN</CLSNAME>
+     <CMPNAME>DOCU_CONTROL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>HTML Control Proxy Class</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_TTTT_DEMO_03_NODE_TRAN</CLSNAME>
+     <CMPNAME>DOCU_LINES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>List of SAPscript Lines</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_TTTT_DEMO_03_NODE_TRAN</CLSNAME>
+     <CMPNAME>REPORTNAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>ABAP Program Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_TTTT_DEMO_03_NODE_TRAN</CLSNAME>
+     <CMPNAME>TRANSACTION_CODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Transaction Code</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

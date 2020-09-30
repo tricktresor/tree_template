@@ -90,6 +90,10 @@ protected section.
     for event NODE_DOUBLE_CLICK of CL_LIST_TREE_MODEL
     importing
       !NODE_KEY .
+  methods ON_SELECTION_CHANGED
+    for event SELECTION_CHANGED of CL_LIST_TREE_MODEL
+    importing
+      !NODE_KEY .
 private section.
 
   methods DISPLAY
@@ -354,6 +358,10 @@ CLASS ZCL_TTTT_MAIN IMPLEMENTATION.
   ENDMETHOD.
 
 
+  method ON_SELECTION_CHANGED.
+  endmethod.
+
+
   METHOD set_tree.
 
 
@@ -362,10 +370,10 @@ CLASS ZCL_TTTT_MAIN IMPLEMENTATION.
 
     CREATE OBJECT tree
       EXPORTING
-        node_selection_mode         = cl_list_tree_model=>node_sel_mode_multiple
-*       node_selection_mode         = cl_list_tree_model=>node_sel_mode_single
-        item_selection              = abap_true    " Can Individual Items be Selected?
-        with_headers                = abap_false   " 'X': With Headers
+*        node_selection_mode         = cl_list_tree_model=>node_sel_mode_multiple
+        node_selection_mode         = cl_list_tree_model=>node_sel_mode_single
+        item_selection              = abap_true
+        with_headers                = abap_false
       EXCEPTIONS
         illegal_node_selection_mode = 1
         OTHERS                      = 2.
@@ -390,7 +398,9 @@ CLASS ZCL_TTTT_MAIN IMPLEMENTATION.
          ( eventid = cl_list_tree_model=>eventid_node_double_click )
          ( eventid = cl_list_tree_model=>eventid_item_double_click )
          ( eventid = cl_list_tree_model=>eventid_link_click  )
-         ( eventid = cl_list_tree_model=>eventid_checkbox_change  ) ) ).
+*         ( eventid = cl_list_tree_model=>eventid_selection_changed  )
+         ( eventid = cl_list_tree_model=>eventid_checkbox_change  )
+         ) ).
 
     SET HANDLER on_expand_no_children     FOR tree.
     SET HANDLER on_checkbox_change        FOR tree.
@@ -400,6 +410,7 @@ CLASS ZCL_TTTT_MAIN IMPLEMENTATION.
     SET HANDLER on_node_double_click      FOR tree.
     SET HANDLER on_item_double_click      FOR tree.
     SET HANDLER on_expand_node            FOR tree.
+    SET HANDLER on_selection_changed      FOR tree.
 
 
   ENDMETHOD.
