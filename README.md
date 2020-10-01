@@ -78,3 +78,24 @@ specific nodes with discrete attributes
 * report
 
 ![screenshot demo03](https://github.com/tricktresor/tree_template/blob/master/img/SNAG-00776.png)
+
+## demo 04 - example application "simple selection for sub screen"
+
+tried to use simple selection (event SELECTION_CHANGED) for changing the current sub screen on dynpro
+
+![screenshot demo04](https://github.com/tricktresor/tree_template/blob/master/img/SNAG-00777.png)
+
+todo:
+* change icon on activation or mark selected entry with different color
+* select item via application to display desired subscreen
+* set different icon for different status
+  * entered data correct: green led
+  * warnings on screen: yellow led
+  * uncompleted or failure on screen: red led
+  * data to be maintained: grey led
+  
+thoughts:
+* using separate interface for kind of control
+  * get different control for each node (demo 02 - marvel universe)
+  * get data after selection changed or link click (demo 04 - subscreen)
+    
