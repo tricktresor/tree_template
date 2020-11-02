@@ -1,6 +1,8 @@
 # universal tree template
 Tricktresor Tree Template in the context of #devtoberfest 2020
 
+![logo](https://github.com/tricktresor/tree_template/blob/master/img/tree-template-small-01.png)
+
 ![screenshot](https://github.com/tricktresor/tree_template/blob/master/img/SNAG-00721.png)
 
 # purpose
