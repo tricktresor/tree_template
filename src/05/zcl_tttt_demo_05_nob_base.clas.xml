@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_TTTT_DEMO_05_NOB_BASE</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Tricktresor tree templates - demo 05 object base class</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_TTTT_DEMO_05_NOB_BASE</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_TTTT_DEMO_05_NOB_BASE</CLSNAME>
+     <CMPNAME>OBJ_NAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object Name in Object List</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_TTTT_DEMO_05_NOB_BASE</CLSNAME>
+     <CMPNAME>OBJ_TYPE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -70,11 +70,11 @@
        <LINE>PROCESS BEFORE OUTPUT.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>MODULE status_0100.</LINE>
+       <LINE>  MODULE status_0100.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW/>
       <RPY_DYFLOW>
-       <LINE>CALL SUBSCREEN sub INCLUDING sy-repid screen_number.</LINE>
+       <LINE>  CALL SUBSCREEN sub INCLUDING sy-repid screen_number.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
        <LINE>*</LINE>
@@ -83,26 +83,15 @@
        <LINE>PROCESS AFTER INPUT.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>MODULE user_command_0100.</LINE>
+       <LINE>  MODULE user_command_0100.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>MODULE user_command_0100 AT EXIT-COMMAND.</LINE>
+       <LINE>  MODULE user_command_0100 AT EXIT-COMMAND.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>CALL SUBSCREEN sub.</LINE>
+       <LINE>  CALL SUBSCREEN sub.</LINE>
       </RPY_DYFLOW>
      </FLOW_LOGIC>
-     <SPACES>
-      <item>0</item>
-      <item>2</item>
-      <item>0</item>
-      <item>2</item>
-      <item>0</item>
-      <item>0</item>
-      <item>2</item>
-      <item>2</item>
-      <item>2</item>
-     </SPACES>
     </item>
     <item>
      <HEADER>
@@ -195,13 +184,6 @@
        <LINE>* MODULE USER_COMMAND_0101.</LINE>
       </RPY_DYFLOW>
      </FLOW_LOGIC>
-     <SPACES>
-      <item>0</item>
-      <item>0</item>
-      <item>0</item>
-      <item>0</item>
-      <item>0</item>
-     </SPACES>
     </item>
     <item>
      <HEADER>
@@ -687,13 +669,6 @@
        <LINE>* MODULE USER_COMMAND_0102.</LINE>
       </RPY_DYFLOW>
      </FLOW_LOGIC>
-     <SPACES>
-      <item>0</item>
-      <item>0</item>
-      <item>0</item>
-      <item>0</item>
-      <item>0</item>
-     </SPACES>
     </item>
     <item>
      <HEADER>
@@ -770,13 +745,6 @@
        <LINE>* MODULE USER_COMMAND_0201.</LINE>
       </RPY_DYFLOW>
      </FLOW_LOGIC>
-     <SPACES>
-      <item>0</item>
-      <item>0</item>
-      <item>0</item>
-      <item>0</item>
-      <item>0</item>
-     </SPACES>
     </item>
    </DYNPROS>
    <CUA>

@@ -215,7 +215,18 @@ CLASS ZCL_TTTT_MAIN IMPLEMENTATION.
 
   METHOD on_expand_no_children.
 
+    DATA(lo_obj) = node_get_usr_obj( node_key ).
 
+    CHECK lo_obj IS BOUND.
+
+    LOOP AT lo_obj->get_children( ) INTO DATA(child_node).
+      add_node(
+        EXPORTING
+          parent       = node_key
+          object       = child_node ).
+    ENDLOOP.
+
+    tree->expand_node( node_key ).
 
   ENDMETHOD.
 

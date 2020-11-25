@@ -3,7 +3,7 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <PROGDIR>
-    <NAME>ZTTTT_DEMO_02</NAME>
+    <NAME>ZTTTT_DEMO_05</NAME>
     <SUBC>1</SUBC>
     <RLOAD>E</RLOAD>
     <FIXPT>X</FIXPT>
@@ -12,7 +12,7 @@
    <DYNPROS>
     <item>
      <HEADER>
-      <PROGRAM>ZTTTT_DEMO_02</PROGRAM>
+      <PROGRAM>ZTTTT_DEMO_05</PROGRAM>
       <SCREEN>0100</SCREEN>
       <LANGUAGE>E</LANGUAGE>
       <DESCRIPT>main screen</DESCRIPT>
@@ -172,15 +172,43 @@
     <TIT>
      <RSMPE_TITT>
       <CODE>100</CODE>
-      <TEXT>Tree demonstration &quot;Marvel Heroes&quot;</TEXT>
+      <TEXT>Tree demonstration &quot;Repository Browser&quot;</TEXT>
      </RSMPE_TITT>
     </TIT>
    </CUA>
    <TPOOL>
     <item>
      <ID>R</ID>
-     <ENTRY>Tricktresor: Demo Application &quot;Marvel Heroes&quot;</ENTRY>
-     <LENGTH>45</LENGTH>
+     <ENTRY>Tricktresor: Demo Application &quot;Repository Browser&quot;</ENTRY>
+     <LENGTH>50</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_CLEXPO</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>9</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_OBJNAM</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>9</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_OBJTYP</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>9</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_SUBCMP</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>9</LENGTH>
+     <SPLIT>D</SPLIT>
     </item>
    </TPOOL>
   </asx:values>

@@ -2,6 +2,9 @@ interface ZIF_TTTT_NODE
   public .
 
 
+  types:
+    _node_objects TYPE STANDARD TABLE OF REF TO zif_tttt_node WITH DEFAULT KEY .
+
   data NODE_KEY type TM_NODEKEY .
   data CHOSEN type ABAP_BOOL .
   data DESCRIPTION type STRING .
@@ -17,6 +20,9 @@ interface ZIF_TTTT_NODE
     END OF function .
   data CONTAINER type ref to CL_GUI_CONTAINER .
 
+  methods GET_CHILDREN
+    returning
+      value(CHILDREN) type _NODE_OBJECTS .
   methods GET_ITEMS
     returning
       value(ITEMS) type TREEMLITAB .
