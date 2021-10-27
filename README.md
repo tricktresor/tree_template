@@ -94,7 +94,7 @@ not ready yet. needs double click implemented to display object.
 ## demo 06 - example application using selection screen sub-screens
 mainly a copy of Demo 04 but with using sub screens generated in the program using SELECTION-SCREEN ... AS SUBSCREEN
 
-![screenshot demo05](https://github.com/tricktresor/tree_template/blob/master/img/SNAG-007113.png)
+![screenshot demo05](https://github.com/tricktresor/tree_template/blob/master/img/SNAG-0113.png)
 
 ## todo:
 * change icon on activation or mark selected entry with different color
