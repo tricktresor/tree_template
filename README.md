@@ -97,7 +97,7 @@ not ready yet. needs double click implemented to display object.
 ## demo 06 - example application using selection screen sub-screens
 mainly a copy of Demo 04 but with using sub screens generated in the program using SELECTION-SCREEN ... AS SUBSCREEN
 
-![Screenshot_demo06](https://user-images.githubusercontent.com/75187288/139126325-3a154770-718a-44bd-8829-fce0ee0f6682.png)
+![Screenshot_demo06](https://github.com/tricktresor/tree_template/blob/master/img/SNAG-0115.png)
 
 
 ## todo:
