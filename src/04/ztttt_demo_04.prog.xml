@@ -222,7 +222,6 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>ADDR1_VAL-ADDRNUMBER</NAME>
-       <TEXT>Address_Number_</TEXT>
        <LINE>003</LINE>
        <COLUMN>004</COLUMN>
        <LENGTH>015</LENGTH>
@@ -239,7 +238,6 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEMPLATE</TYPE>
        <NAME>ADDR1_VAL-ADDRNUMBER</NAME>
-       <TEXT>__________</TEXT>
        <LINE>003</LINE>
        <COLUMN>020</COLUMN>
        <LENGTH>010</LENGTH>
@@ -257,7 +255,6 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>ADDR1_VAL-TITLE</NAME>
-       <TEXT>Title__________</TEXT>
        <LINE>004</LINE>
        <COLUMN>004</COLUMN>
        <LENGTH>015</LENGTH>
@@ -276,7 +273,6 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEMPLATE</TYPE>
        <NAME>ADDR1_VAL-TITLE</NAME>
-       <TEXT>____</TEXT>
        <LINE>004</LINE>
        <COLUMN>020</COLUMN>
        <LENGTH>004</LENGTH>
@@ -294,7 +290,6 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>ADDR1_VAL-NAME1</NAME>
-       <TEXT>Name___________</TEXT>
        <LINE>005</LINE>
        <COLUMN>004</COLUMN>
        <LENGTH>015</LENGTH>
@@ -312,7 +307,6 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEMPLATE</TYPE>
        <NAME>ADDR1_VAL-NAME1</NAME>
-       <TEXT>________________________________________</TEXT>
        <LINE>005</LINE>
        <COLUMN>020</COLUMN>
        <LENGTH>040</LENGTH>
@@ -329,7 +323,6 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>ADDR1_VAL-NAME2</NAME>
-       <TEXT>Name_2_________</TEXT>
        <LINE>006</LINE>
        <COLUMN>004</COLUMN>
        <LENGTH>015</LENGTH>
@@ -347,7 +340,6 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEMPLATE</TYPE>
        <NAME>ADDR1_VAL-NAME2</NAME>
-       <TEXT>________________________________________</TEXT>
        <LINE>006</LINE>
        <COLUMN>020</COLUMN>
        <LENGTH>040</LENGTH>
@@ -364,7 +356,6 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>ADDR1_VAL-HOUSE_NUM1</NAME>
-       <TEXT>House_Number___</TEXT>
        <LINE>006</LINE>
        <COLUMN>084</COLUMN>
        <LENGTH>015</LENGTH>
@@ -382,7 +373,6 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>ADDR1_VAL-STREET</NAME>
-       <TEXT>Street_________</TEXT>
        <LINE>007</LINE>
        <COLUMN>004</COLUMN>
        <LENGTH>015</LENGTH>
@@ -400,7 +390,6 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEMPLATE</TYPE>
        <NAME>ADDR1_VAL-STREET</NAME>
-       <TEXT>____________________________________________________________</TEXT>
        <LINE>007</LINE>
        <COLUMN>020</COLUMN>
        <LENGTH>060</LENGTH>
@@ -417,7 +406,6 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEMPLATE</TYPE>
        <NAME>ADDR1_VAL-HOUSE_NUM1</NAME>
-       <TEXT>__________</TEXT>
        <LINE>007</LINE>
        <COLUMN>084</COLUMN>
        <LENGTH>010</LENGTH>
@@ -434,7 +422,6 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>ADDR1_VAL-POST_CODE1</NAME>
-       <TEXT>Postal_Code____</TEXT>
        <LINE>009</LINE>
        <COLUMN>004</COLUMN>
        <LENGTH>015</LENGTH>
@@ -451,7 +438,6 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEMPLATE</TYPE>
        <NAME>ADDR1_VAL-POST_CODE1</NAME>
-       <TEXT>__________</TEXT>
        <LINE>009</LINE>
        <COLUMN>020</COLUMN>
        <LENGTH>010</LENGTH>
@@ -485,7 +471,6 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEMPLATE</TYPE>
        <NAME>ADDR1_VAL-CITY1</NAME>
-       <TEXT>________________________________________</TEXT>
        <LINE>009</LINE>
        <COLUMN>040</COLUMN>
        <LENGTH>040</LENGTH>
@@ -502,7 +487,6 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>ADDR1_VAL-BUILDING</NAME>
-       <TEXT>Building_Code__</TEXT>
        <LINE>011</LINE>
        <COLUMN>004</COLUMN>
        <LENGTH>015</LENGTH>
@@ -520,7 +504,6 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEMPLATE</TYPE>
        <NAME>ADDR1_VAL-BUILDING</NAME>
-       <TEXT>____________________</TEXT>
        <LINE>011</LINE>
        <COLUMN>020</COLUMN>
        <LENGTH>020</LENGTH>
@@ -537,7 +520,6 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>ADDR1_VAL-FLOOR</NAME>
-       <TEXT>Floor__________</TEXT>
        <LINE>012</LINE>
        <COLUMN>004</COLUMN>
        <LENGTH>015</LENGTH>
@@ -555,7 +537,6 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEMPLATE</TYPE>
        <NAME>ADDR1_VAL-FLOOR</NAME>
-       <TEXT>__________</TEXT>
        <LINE>012</LINE>
        <COLUMN>020</COLUMN>
        <LENGTH>010</LENGTH>
@@ -572,7 +553,6 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>ADDR1_VAL-ROOMNUMBER</NAME>
-       <TEXT>Room_Number____</TEXT>
        <LINE>013</LINE>
        <COLUMN>004</COLUMN>
        <LENGTH>015</LENGTH>
@@ -590,7 +570,6 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEMPLATE</TYPE>
        <NAME>ADDR1_VAL-ROOMNUMBER</NAME>
-       <TEXT>__________</TEXT>
        <LINE>013</LINE>
        <COLUMN>020</COLUMN>
        <LENGTH>010</LENGTH>
@@ -607,7 +586,6 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>ADDR1_VAL-COUNTRY</NAME>
-       <TEXT>Country_____</TEXT>
        <LINE>014</LINE>
        <COLUMN>004</COLUMN>
        <LENGTH>012</LENGTH>
@@ -626,7 +604,6 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEMPLATE</TYPE>
        <NAME>ADDR1_VAL-COUNTRY</NAME>
-       <TEXT>___</TEXT>
        <LINE>014</LINE>
        <COLUMN>020</COLUMN>
        <LENGTH>003</LENGTH>
