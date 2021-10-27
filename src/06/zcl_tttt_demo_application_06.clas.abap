@@ -28,27 +28,27 @@ CLASS ZCL_TTTT_DEMO_APPLICATION_06 IMPLEMENTATION.
 
     DATA(fol_header) = tree->add_node(
       parent = VALUE #( )
-      object = NEW zcl_tttt_demo_04_folder( 'Header'(h00) ) ).
+      object = NEW zcl_tttt_demo_06_folder( 'Header'(h00) ) ).
 
     DATA(header_detail) = tree->add_node(
       parent = fol_header
-      object = NEW zcl_tttt_demo_04_screen(
+      object = NEW zcl_tttt_demo_06_screen(
         description = 'Detail'(h01)
         screen_nr   = '0101' ) ).
 
     DATA(header_address) = tree->add_node(
       parent = fol_header
-      object = NEW zcl_tttt_demo_04_screen(
+      object = NEW zcl_tttt_demo_06_screen(
         description = 'Address'(h02)
         screen_nr   = '0102' ) ).
 
     DATA(fol_items) = tree->add_node(
       parent = VALUE #( )
-      object = NEW zcl_tttt_demo_04_folder( 'Item data'(i01) ) ).
+      object = NEW zcl_tttt_demo_06_folder( 'Item data'(i01) ) ).
 
     DATA(item_overview) = tree->add_node(
       parent = fol_items
-      object = NEW zcl_tttt_demo_04_screen(
+      object = NEW zcl_tttt_demo_06_screen(
         description = 'Item overview'(i02)
         screen_nr   = '0201' ) ).
 

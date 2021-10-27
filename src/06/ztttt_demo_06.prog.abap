@@ -1,6 +1,6 @@
 REPORT ztttt_demo_06.
 
-DATA application TYPE REF TO zcl_tttt_demo_application_04.
+DATA application TYPE REF TO zcl_tttt_demo_application_06.
 DATA screen_number TYPE dynnr.
 
 TABLES addr1_val.
@@ -20,7 +20,6 @@ SELECTION-SCREEN BEGIN OF SCREEN 201 AS SUBSCREEN.
 PARAMETERS p22 AS CHECKBOX DEFAULT 'X'.
 PARAMETERS p21 TYPE char05.
 SELECTION-SCREEN END OF SCREEN 201.
-
 
 START-OF-SELECTION.
   CALL SCREEN 100.

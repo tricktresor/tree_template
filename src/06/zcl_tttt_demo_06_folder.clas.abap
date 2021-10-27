@@ -57,7 +57,7 @@ CLASS ZCL_TTTT_DEMO_06_FOLDER IMPLEMENTATION.
 
   METHOD ZIF_TTTT_NODE_SINGLE~GET_NODE_ICON.
 
-    icon = icon_dummy.
+    icon = icon_parameter.
 
   ENDMETHOD.
 

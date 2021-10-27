@@ -58,7 +58,7 @@ CLASS ZCL_TTTT_DEMO_06_SCREEN IMPLEMENTATION.
 
   METHOD ZIF_TTTT_NODE_SINGLE~GET_NODE_ICON.
 
-    icon = icon_led_green.
+    icon = icon_message_type.
 
   ENDMETHOD.
 
@@ -73,6 +73,6 @@ CLASS ZCL_TTTT_DEMO_06_SCREEN IMPLEMENTATION.
 
 
   METHOD ZIF_TTTT_NODE_SINGLE~IS_FOLDER.
-    folder = abap_true.
+    folder = abap_false.
   ENDMETHOD.
 ENDCLASS.

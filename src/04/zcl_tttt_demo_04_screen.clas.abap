@@ -73,6 +73,6 @@ CLASS ZCL_TTTT_DEMO_04_SCREEN IMPLEMENTATION.
 
 
   METHOD ZIF_TTTT_NODE_SINGLE~IS_FOLDER.
-    folder = abap_true.
+    folder = abap_false.
   ENDMETHOD.
 ENDCLASS.
