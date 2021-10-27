@@ -87,7 +87,11 @@ tried to use simple selection (event SELECTION_CHANGED) for changing the current
 
 ![screenshot demo04](https://github.com/tricktresor/tree_template/blob/master/img/SNAG-00777.png)
 
-todo:
+## demo 06 - example application using selection screen sub-screens
+mainly a copy of Demo 04 but with using sub screens generated in the program using SELECTION-SCREEN ... AS SUBSCREEN
+
+
+## todo:
 * change icon on activation or mark selected entry with different color
 * select item via application to display desired subscreen
 * set different icon for different status
@@ -96,7 +100,7 @@ todo:
   * uncompleted or failure on screen: red led
   * data to be maintained: grey led
   
-thoughts:
+## thoughts:
 * using separate interface for kind of control
   * get different control for each node (demo 02 - marvel universe)
   * get data after selection changed or link click (demo 04 - subscreen)
