@@ -87,9 +87,14 @@ tried to use simple selection (event SELECTION_CHANGED) for changing the current
 
 ![screenshot demo04](https://github.com/tricktresor/tree_template/blob/master/img/SNAG-00777.png)
 
+## demo 05 - example application displaying repository objects
+Displaying repository objects in a tree. 
+not ready yet. needs double click implemented to display object.
+
 ## demo 06 - example application using selection screen sub-screens
 mainly a copy of Demo 04 but with using sub screens generated in the program using SELECTION-SCREEN ... AS SUBSCREEN
 
+![screenshot demo05](https://github.com/tricktresor/tree_template/blob/master/img/SNAG-007113.png)
 
 ## todo:
 * change icon on activation or mark selected entry with different color
